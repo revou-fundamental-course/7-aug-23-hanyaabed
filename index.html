@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Katik | Kalkulator Matematik (Segitiga)</title>
+</head>
+
+<body>
+    <div class="header">
+        <span class="main-title">Katik</span><span class="sub-title">Kalkulator Matematik</span>
+    </div>
+    <div class="container">
+        <!-- Kartu Utama (Yang ada tulisan "Welcome to Katik") -->
+        <div class="main-card">
+            <h2 class="welcome">Welcome to Katik</h2>
+            <p class="first-sentence">Hai Sobat, Selamat datang di Katik :]</p>
+            <p class="second-sentence">Sebuah web apps sederhana yang berfungsi untuk nilai luas dan keliling bangun
+                datar</p>
+            <p class="first-caption">
+                Segitiga
+            </p>
+            <p class="second-caption">
+                Jajar Genjang
+            </p>
+            <!-- Kartu Luas Segitiga -->
+            <div class="luas-card">
+                <div class="header">
+                    <h2 class="luas-title">Luas Segitiga</h2>
+                </div>
+                <div class="body">
+                    <img src="Img/Group 7.jpg" alt="segitiga" class="segitiga-img">
+                    <div class="text-luas">
+                        <p>Rumus Luas Segitiga</p>
+                        <p class="rumus-luas">L = 1/2 x a x t</p>
+                        <p>
+                            Di mana:<br>
+                            L: Luas<br>
+                            a: Panjang Alas<br>
+                            t: Tinggi
+                        </p>
+                    </div>
+                    <div class="line"></div>
+                    <h2 class="title-hitung">
+                        Hitung Luas Segitiga
+                    </h2>
+                    <div class="body-hitung">
+                        <input type="text" class="input-sisi-alas" placeholder="Panjang Alas" id="alas">
+                        <p id="alas-error"></p>
+                        <input type="text" class="input-sisi-tinggi" placeholder="Tinggi" id="tinggi">
+                        <p id="tinggi-error"></p>
+                        <div class="hasil-luas">
+                            <p id="hitung-luas"></p>
+                            <p id="sisi-luas"></p>
+                            <p id="output_luas"></p>
+                        </div>
+                        <button type="submit" class="tombol-hitung-luas" onclick="hitungLuas();">Hitung</button>
+                        <div class="submit-error"></div>
+                        <button type="reset" class="tombol-reset-luas" onclick="resetLuas()">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <div class="spacing-card"></div>
+            <!-- Kartu Keliling Segitiga -->
+            <div class="keliling-card">
+                <div class="header">
+                    <h2 class="keliling-title">Keliling Segitiga</h2>
+                </div>
+                <div class="body">
+                    <img src="Img/Group 7.jpg" alt="segitiga" class="segitiga-img">
+                    <div class="text-keliling">
+                        <p>Rumus Keliling Segitiga</p>
+                        <p class="rumus-keliling">K = A + B + C</p>
+                        <p>
+                            Di mana:<br>
+                            K: Keliling<br>
+                            S1: Sisi A<br>
+                            S2: Sisi B<br>
+                            S3: Sisi C<br>
+                        </p>
+                    </div>
+                    <div class="line"></div>
+                    <h2 class="title-hitung">
+                        Hitung Keliling Segitiga
+                    </h2>
+                    <div class="body-hitung">
+                        <input type="text" class="input-sisi-A" placeholder="Sisi A" id="sisi-A">
+                        <p id="A-error"></p>
+                        <input type="text" class="input-sisi-B" placeholder="Sisi B" id="sisi-B">
+                        <p id="B-error"></p>
+                        <input type="text" class="input-sisi-C" placeholder="Sisi C" id="sisi-C">
+                        <p id="C-error"></p>
+                        <div class="hasil-keliling">
+                            <p id="hitung-keliling"></p>
+                            <p id="sisi-keliling"></p>
+                            <p id="output_keliling"></p>
+                        </div>
+                        <input type="submit" value="Hitung" class="tombol-hitung-keliling" onclick="hitungKeliling();">
+                        <input type="reset" value="Reset" class="tombol-reset-keliling" onclick="resetKeliling()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
