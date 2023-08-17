@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    background-color: rgb(0, 125, 220);
+    color: white;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.main-title {
+    font-weight: bolder;
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.sub-title {
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(195, 195, 195);
+}
+
+.container {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+
+.main-card {
+    background-color: white;
+    border-radius: 2px;
+    padding: 25px;
+}
+
+.welcome {
+    text-align: center;
+    margin: 20px;
+    font-size: 40px;
+}
+
+.first-sentence,
+.second-sentence {
+    text-align: center;
+    font-size: 20px;
+}
+
+.first-caption {
+    background-color: rgb(0, 125, 220);
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 12px 0px;
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+.second-caption {
+    text-align: center;
+    color: rgb(0, 125, 220);
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.luas-card,
+.keliling-card {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.luas-card .body,
+.keliling-card .body {
+    border: 1.5px solid rgb(0, 125, 220);
+}
+
+.segitiga-img {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 18%;
+}
+
+.text-luas,
+.text-keliling {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.rumus-luas,
+.rumus-keliling {
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+}
+
+.input-sisi-alas,
+.input-sisi-tinggi{
+    width: 100%;
+    padding: 20px 8px;
+    margin: 12px;
+    margin-left: -10px;
+    font-size: 20px;
+}
+
+.line {
+    border: 0.1px solid rgb(220, 220, 220);
+}
+
+.title-hitung {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.body-hitung {
+    padding: 20px;
+}
+
+.tombol-hitung-luas,
+.tombol-hitung-keliling {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: rgb(0, 125, 220);
+    border: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.tombol-hitung-luas:hover,
+.tombol-hitung-keliling:hover {
+    background-color: rgb(0, 71, 125);
+    transition: all 0.3s ease-in-out;
+}
+
+.tombol-reset-luas,
+.tombol-reset-keliling {
+    display: block;
+    margin-left: auto;
+    margin-right: -10px;
+    margin-top: 15px;
+    background-color: rgb(238, 214, 0);
+    border: none;
+    padding: 15px 23px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.tombol-reset-luas:hover,
+.tombol-reset-keliling:hover {
+    background-color: rgb(170, 153, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+.spacing-card {
+    padding: 30px 0px;
+}
+
+.input-sisi-A,
+.input-sisi-B,
+.input-sisi-C {
+    width: 100%;
+    padding: 20px 8px;
+    margin: 12px;
+    margin-left: -10px;
+    font-size: 20px;
+}
+
+#alas-error,
+#tinggi-error{
+    color: red;
+}
+
+#A-error,
+#B-error,
+#C-error {
+    color: red;
+}
+
+@media screen and (max-width: 992px) {
+    .segitiga-img{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-title {
+        font-size: 40px;
+    }
+
+    .sub-title {
+        font-size: 24px;
+    }
+
+    .segitiga-img{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .tombol-reset-luas,
+    .tombol-reset-keliling{
+        margin-right: auto;
+    }
+}
+
+@media  screen and (max-width: 390px) {
+    .segitiga-img{
+        width: 60%;
+    }
+}
